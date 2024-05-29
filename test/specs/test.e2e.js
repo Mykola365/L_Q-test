@@ -16,7 +16,7 @@ describe ("login page ", () => {
         await expect(browser).toHaveTitle('Swag Labs')
 
     })
-    xit("Login button is enabled", async ()=> {
+    it("Login button is enabled", async ()=> {
         await browser.url('https://www.saucedemo.com');
 
         let LoginBtn = await $('#login-button')

@@ -2,14 +2,14 @@ import loginPage from "./../pageobjects/login.page.js";
 // Mykola Turchyn ('mukolatyrshyn@gmail.com')
 describe ("login page ", () => {
 
-    xit("login with corect data", async ()=> {
+    it("login with corect data", async ()=> {
         await browser.url('https://www.saucedemo.com');
 
         await loginPage.setUsernameInput('standard_user')
         await loginPage.setPasswordInput('secret_sauce')
         await loginPage.cliickOnLoginButton()
     })
-    xit("Should corect title", async ()=> {
+    it("Should corect title", async ()=> {
         await browser.url('https://www.saucedemo.com');
 
         const title = await browser.getTitle()
